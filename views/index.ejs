@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title><%= title %></title>
+      <% include ./partials/head %>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="jumbotron">
+            <h1><%= title %></h1>
+            <p>Welcome to <%= title %></p>
+            <p>This is a basic Node JS Application. Controllers, Passport, Express have already been defined.</p>
+          </div>
+          <div class="mt-2">
+            <a href="/login">Login</a> or <a href="/register">Create an Account</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

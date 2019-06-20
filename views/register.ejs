@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Register an Account</title>
+      <% include ./partials/head %>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="jumbotron">
+            <h1>Register an Account</h1>
+            <p>Use the form to create an account</p>
+            <p>Already have an account? <a href="/login">Log in here.</a></p>
+          </div>
+
+          <div class="mt-5">
+            <h2>Register</h2>
+            <form action="/auth/register" method="post">
+              <label for="name">Enter Name:
+                <input id="name" type="text" name="name" placeholder="Your name...">
+              </label>
+              <hr>
+              <label for="username">Enter Username:
+                <input id="username" type="text" name="username" placeholder="Your username...">
+              </label>
+              <hr>
+              <label for="email">Enter Email:
+                <input id="email" type="email" name="email" placeholder="Email Address...">
+              </label>
+              <hr>
+              <label for="password">Enter Password:
+                <input id="password" type="password" name="password" placeholder="Secure Password...">
+              </label>
+              <br>
+              <input type="submit" value="Register">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
